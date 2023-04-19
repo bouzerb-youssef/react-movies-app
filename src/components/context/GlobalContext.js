@@ -1,7 +1,7 @@
 import { createContext, useReducer ,useContext} from "react";
 import reducer from "./reducer";
 const initialState={
-    wachlist:[],
+    watchlist:[],
     watched:[],
 
 
@@ -17,7 +17,7 @@ const ContextProvider= ({children})=>{
     return <GlobalContext.Provider
                 value=
                 {{
-                wachlist:state.wachlist
+                    watchlist:state.watchlist
                 ,watched:state.watched 
                 , MoviesDispatch:dispatch}}>
                 {children}

@@ -32,7 +32,7 @@ const Add = () => {
           {movies.length < 0 ? <h1>no movies</h1> :
              <ul className='results'>
              { movies.map((item) => (
-              <ResultCard movie={item} />))}
+              <ResultCard  key={item.imdbID} movie={item} />))}
  
              </ul>}
           
